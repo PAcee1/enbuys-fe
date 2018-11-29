@@ -1,0 +1,48 @@
+/*
+* @Author: Pace
+* @Date:   2018-11-27 20:04:55
+* @Last Modified by:   Pace
+* @Last Modified time: 2018-11-27 20:51:40
+*/
+.pg-content{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.pg-content .pg-item{
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    margin: 0 2px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    -moz-user-select : none;
+    -webkit-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+    border-radius: 5px;
+}
+.pg-content .pg-item:hover{
+	border: 1px solid #ff9838;
+	color: #ff9838;
+}
+.pg-content .pg-item.disabled{
+    color: #ccc;
+    background: none;
+    cursor: auto;
+    border: 1px solid #ccc;
+}
+.pg-content .pg-item.active{
+    border: 1px solid #f6f6f6;
+    background: #ff9838;
+    color: #fff;
+    cursor: auto;
+}
+.pg-content .pg-total{
+    margin-left: 10px;
+    background: none;
+    cursor: auto;
+}

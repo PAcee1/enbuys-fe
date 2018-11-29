@@ -1,0 +1,58 @@
+/*
+* @Author: Pace
+* @Date:   2018-11-22 13:49:40
+* @Last Modified by:   Pace
+* @Last Modified time: 2018-11-27 23:32:23
+*/
+/*头部导航主样式*/
+.nav{
+	background: #eee;
+	height: 30px;
+	line-height: 30px
+}
+/*用户部分*/
+.nav .user{
+	float: left;
+}
+.nav .user .link {
+    display: inline-block;
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+}
+.user>.login-logo {
+    float: left;
+    display: block;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background: url(../../../image/login-logo.png) round;
+    border-radius: 50%;
+    border-bottom: 4px solid #ddd;
+    position: relative;
+    z-index: 99;
+}
+.nav .user.login{
+	display: none;
+}
+/*导航链接部分*/
+.nav .nav-list{
+	float: right;
+}
+.nav-list .nav-item .link{
+	display: block;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.nav .nav-list .nav-item{
+	display: block;
+	float: left;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+.nav-list .nav-item.cart{
+	width: 98px;
+    text-align: left;
+    color: #666;
+}

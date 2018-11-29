@@ -1,0 +1,52 @@
+/*
+* @Author: Pace
+* @Date:   2018-11-22 21:06:57
+* @Last Modified by:   Pace
+* @Last Modified time: 2018-11-27 18:02:11
+*/
+
+
+/*logo div样式*/
+.logo-wrap{
+	width: 180px;
+	height: 109px;
+	position: absolute;
+	border-bottom: 1px solid #f5f5f5;
+}
+.header .logo{
+	display: block;
+	padding: 15px 0 0 25px;
+}
+/*头部标题搜索样式*/
+.header .search-con{
+	padding: 40px 0 30px 250px; /*设置边距*/
+}
+.header .search-con .search-input{
+	width: 500px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	font-size: 15px;
+	border: 1px solid #999;
+	outline: none;
+	border-radius: 1rem 0 0 1rem;
+}
+.header .search-con .search-btn{
+	position: absolute;
+	height: 42px;
+	width: 75px;
+	border-radius: 0 1rem 1rem 0;
+	box-shadow: ;
+}
+
+/* 面包屑导航 */
+.crumb{
+	margin-bottom: 10px;
+	height: 30px;
+	line-height: 30px;
+	background: #eee;
+	color: #888;
+	font-size: 12px;
+	/*border-top: 2px solid #ff9838;*/
+}
+

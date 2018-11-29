@@ -1,0 +1,91 @@
+/*
+* @Author: Pace
+* @Date:   2018-11-23 12:59:29
+* @Last Modified by:   Pace
+* @Last Modified time: 2018-11-23 21:45:56
+*/
+/*最外层容器*/
+.page-wrap{
+	background: #fff;
+
+}
+.page-wrap .w{
+	border-top: 3px solid #f90;
+	background: #f5f5f5;
+}
+/*用户登陆框*/
+.page-wrap .user-con{
+	position: relative;
+	width: 320px;
+	padding: 30px 30px;
+	background: #f5f5f5;
+	margin: 0 auto;
+	
+}
+.footer{
+	background: #fff;
+}
+
+.user-con .user-title{
+	text-align: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+	font-size: 18px;
+	font-weight: bold;
+	color: #666;
+}
+
+.user-con .user-box{
+	padding: 20px;
+}
+
+/*错误提示框*/
+.user-con .user-box .error-item{
+	position: relative;
+	padding: 4px 0 4px 40px;
+	margin-bottom: 10px;
+	border: 1px solid red;
+	color: red;
+	background: #fde9e9;
+	display: none;
+}
+
+/*错误图标*/
+.user-con .user-box .error-icon{
+	position: absolute;
+	left: 14px;
+	top: 50%;
+	font-size: 14px;
+	margin-top: -7px;
+}
+
+/*用户输入框*/
+.user-con .user-item{
+	position: relative;
+	margin-bottom: 15px;
+}
+/*fa小icon*/
+.fa{
+	color: #ff9838;
+}
+
+/*fa小icon*/
+#error-icon{
+	color: red;
+}
+/*登陆按钮*/
+.page-wrap .user-item .btn{
+	width: 237px;
+}
+
+
+/*链接*/
+.page-wrap .link-item{
+	position: absolute;
+	margin-top: -5px;
+	right:50px;
+}
+.page-wrap .link-item .link{
+	margin-left: -5px;
+}
+

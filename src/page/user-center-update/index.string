@@ -1,0 +1,30 @@
+<!-- 为了使信息初始化完毕再加载，单独隔出来 -->
+<div class="user-info">
+	<div class="form-line">
+		<span class="label">用户名：</span>
+		<span class="text">{{username}}</span>
+	</div>
+	<div class="form-line">	
+		<span class="label">会员等级：</span>
+		<span class="text">{{level}}</span>
+	</div>
+	<div class="form-line">
+		<span class="label">电话：</span>
+		<input class="input" id="phone" autocomplete="off" value="{{phone}}"></input>
+	</div>
+	<div class="form-line">
+		<span class="label">邮箱：</span>
+		<input class="input" id="email" autocomplete="off" value="{{email}}"></input>
+	
+	</div>
+	
+	<div class="form-line">
+		<span class="label">密码提示问题：</span>
+		<input class="input" id="question" autocomplete="off" value="{{question}}"></input>
+	</div>
+	<div class="form-line">
+		<span class="label">提示问题答案：</span>
+		<input class="input" id="answer" autocomplete="off" value="{{answer}}"></input>
+	</div>
+	<span class="btn btn-submit">提交修改</span>
+</div>

@@ -1,0 +1,29 @@
+<!-- 为了使信息初始化完毕再加载，单独隔出来 -->
+<div class="user-info">
+	<div class="form-line">
+		<span class="label">用户名：</span>
+		<span class="text">{{username}}</span>
+	</div>
+	<div class="form-line">
+		<span class="label">电话：</span>
+		<span class="text">{{phone}}</span>
+	</div>
+	<div class="form-line">
+		<span class="label">邮箱：</span>
+		<span class="text">{{email}}</span>
+	
+	</div>
+	<div class="form-line">	
+		<span class="label">会员等级：</span>
+		<span class="text">{{level}}</span>
+	</div>
+	<div class="form-line">
+		<span class="label">密码提示问题：</span>
+		<span class="text">{{question}}</span>
+	</div>
+	<div class="form-line">
+		<span class="label">提示问题答案：</span>
+		<span class="text">{{answer}}</span>
+	</div>
+	<a class="btn btn-submit" href="./user-center-update.html">编辑</a>
+</div>

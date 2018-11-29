@@ -1,0 +1,27 @@
+/*
+* @Author: Pace
+* @Date:   2018-11-22 14:08:48
+* @Last Modified by:   Pace
+* @Last Modified time: 2018-11-27 21:03:34
+*/
+.footer{
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+.footer .links{
+	text-align: center;
+	color: #666;
+	line-height: 30px;
+}
+.footer .links .link{
+	padding: 0 10px;
+}
+.footer .copyright{
+	text-align: center;
+	color: #666;
+	line-height: 30px;
+}
+.links{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}

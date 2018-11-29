@@ -1,0 +1,73 @@
+<!-- 找回密码 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<%= require('html-loader!./layout/head-common.html') %>
+	<title>嗯买商城 - <%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<%= require('html-loader!./layout/nav-simple.html') %>
+	<div class="page-wrap">
+		<div class="w">
+			<div class="user-con">
+				<h2 class="myh2">找回密码</h2>
+				<div class="user-box">
+					<div class="error-item">
+						<i class="fa fa-minus-circle error-icon" id="error-icon"></i>
+						<p class="err-msg">Error</p>
+					</div>
+					<div class="step-con step-username">
+						<p class="user-item-text">请输入用户名：</p>
+						<div class="user-item">
+							<input id="username" class="input-default" placeholder="请输入用户名" autocomplete="off">
+							<label class="label-default-ico" for="username">
+								<i class="fa fa-user-circle"></i>
+								
+							</label>
+						</div>
+						<div class="user-item">
+							<a class="btn btn-submit" id="submit-username">下一步</a>
+						</div>
+					</div>
+
+					<div class="step-con step-question">
+						<p class="user-item-text">密码提示问题是：
+							<span class="question"></span>
+						</p>
+						<div class="user-item">
+							<input id="answer" class="input-default" placeholder="请输入密码提示问题答案" autocomplete="off">
+							<label class="label-default-ico" for="answer">
+								<i class="fa fa-key"></i>
+								
+							</label>
+						</div>
+						<div class="user-item">
+							<a class="btn btn-submit" id="submit-question">下一步</a>
+						</div>
+					</div>
+
+					<div class="step-con step-password">
+						<p class="user-item-text">请输入新密码：</p>
+						<div class="user-item">
+							<input type="password" id="password" class="input-default" placeholder="请输入新密码" autocomplete="off">
+							<label class="label-default-ico" for="password">
+								<i class="fa fa-lock"></i>
+								
+							</label>
+						</div>
+						<div class="user-item">
+							<a class="btn btn-submit" id="submit-password">下一步</a>
+						</div>
+					</div>
+
+					<div class="link-item">
+						<a class="link high-light" href="./user-login.html">返回登录>></a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

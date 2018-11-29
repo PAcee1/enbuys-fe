@@ -1,0 +1,17 @@
+/*
+* @Author: Pace
+* @Date:   2018-11-22 13:31:26
+* @Last Modified by:   Pace
+* @Last Modified time: 2018-11-27 18:40:00
+*/
+.nav-simple{
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ddd;
+	background: #fff;
+}
+.nav-logo{
+	width: 50px;
+	padding: 8px 0 0 5px;
+	float: left;
+}

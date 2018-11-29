@@ -1,0 +1,165 @@
+/*
+* @Author: S1
+* @Date:   2018-11-21 18:12:48
+* @Last Modified by:   Pace
+* @Last Modified time: 2018-11-27 18:22:15
+*/
+/* keywords-list */
+.keywords-list{
+	float: left;
+	width: 180px;
+	z-index: 15;
+	margin-right: 10px;
+	background: #fff;
+	height: 320px;
+}
+.keywords-list .keywords-item{
+	padding-left: 10px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 12px;
+	
+
+}
+.keywords-list .keywords-item .link{
+	margin-right: 4px;
+}
+.keywords-list .keywords-item:hover .link{
+	color: #fff;
+}
+.keywords-list .keywords-item:hover{
+	background: #ff9838;
+
+}
+
+/* banner-con */
+.banner-con{
+	width: 650px;
+	background: #eee;
+	position: relative;
+	height: 320px;
+	float: left;
+	margin-right: 10px;
+}
+.banner-con .loading{
+	margin-top: 120px;
+}
+.banner-con .banner-img{
+	width: 100%;
+	height: 320px;
+}
+/* banner前一张箭头，后一张箭头 */
+.banner-con .banner-arrow{
+	width: 30px;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+	position: absolute;
+	top: 130px;
+	background: rgba(0,0,0,0);
+	cursor: pointer;
+	color: #fff;
+	border-radius: 20px;
+}
+.banner-con .banner-arrow:hover{
+	background: #aaa;
+	background: rgba(0,0,0,.5);
+}
+.banner-con .banner-arrow.prev{
+    left: 0;
+}
+.banner-con .banner-arrow.next{
+    right: 0;
+}
+
+/*轮播图右侧广告*/
+.banner-right{
+	width: 230px;
+	position: relative;
+	height: 320px;
+	float: left;
+}
+.banner-right .img-item.top {
+    background: #eee url(../../image/banner/banner-right-top.jpg) round;
+    margin-bottom: 10px;
+}
+.banner-right .img-item.middle {
+    background: #eee url(../../image/banner/banner-right-middle.jpg) round;
+    margin-bottom: 10px;
+}
+.banner-right .img-item.bottom {
+    background: #eee url(../../image/banner/banner-right-bottom.jpg) round;
+    margin-bottom: 10px;
+}
+.banner-right .img-item {
+    height: 100px;
+    width: 100%;
+    background: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/* floor */
+.floor-wrap .floor-title{
+	height: 50px;
+	line-height: 60px;
+	color: #d58717;
+	font-weight: normal;
+	font-size: 20px;
+	border-bottom: 1px solid #d58717;
+}
+/* 更改各楼层标题颜色 */
+.floor-wrap:nth-child(2) .floor-title{
+    color: #3b838c;
+    border-bottom: 1px solid #3b838c;
+}
+.floor-wrap:nth-child(3) .floor-title{
+    color: #a93931;
+    border-bottom: 1px solid #a93931;
+}
+.floor-wrap:nth-child(4) .floor-title{
+    color: #488bad;
+    border-bottom: 1px solid #488bad;
+}
+.floor-wrap:nth-child(5) .floor-title{
+    color: #642663;
+    border-bottom: 1px solid #642663;
+}
+.floor-wrap .floor-list{
+	margin-right: -20px;
+	overflow: hidden;
+}
+.floor-wrap .floor-item{
+	position: relative;
+	width: 200px;
+	height: 220px;
+	margin: 15px 17px 15px 0;
+	float: left;
+	cursor: pointer;
+	background: #fff;
+	top: 0;
+	border: 1px solid #fff;
+	transition: box-shadow .3s,top .3s,border.2s;
+	box-shadow: 0 0 0 rgba(0,0,0,.1);
+}
+.floor-wrap .floor-list .floor-item:hover{
+	top : -5px;
+	border: 1px solid #ff9838;
+	box-shadow: 0 15px 20px rgba(0,0,0,.1);
+}
+.floor-wrap .floor-list .floor-item .floor-text{
+	position: absolute;
+	top: 12px;
+	left: 20px;
+	font-size: 16px;
+	color: #555;
+}
+.floor-wrap .floor-list .floor-item .floor-img{
+	position: absolute;
+	right: 15px;
+	bottom: 5px;
+	width: 80%;
+	height: 75%;
+	border: none;
+}

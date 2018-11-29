@@ -1,0 +1,224 @@
+/*
+ * @Author: Pace 
+ * @Date: 2018-11-29 21:24:17 
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-11-30 00:58:07
+ */
+ 
+/* 地址部分的样式 */
+.panel-body.address-con{
+    margin-right: -20px;
+    padding-bottom: 10px;
+    height: 140px;
+    overflow: hidden;
+    transition: all 2s;
+}
+.address-item,
+.address-add{
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    width: 233px;
+    height: 99px;
+    margin-right: 10px;
+    float: left;
+    margin-top: 15px;
+    border: 1px dashed #ddd;
+    color: #666;
+    
+}
+.page-wrap .address-item.active{
+    background: #fff url(//s.avenda2333.cn/ymall_fe/dist/resource/addr-border.png);
+    border: 1px solid #f5f5f5;
+}
+.address-item:hover{
+    background: #fafafa;
+}
+/* 地址标题title */
+.address-item .address-title{
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+.address-item .address-title .name {
+    font-weight: 900;
+    color: #f76a1e;
+}
+.address-item .address-title .postcode {
+    color: #aaa;
+    margin-left: 10px;
+}
+/* 地址detail */
+.address-item .address-detail{
+    margin-top: 10px;
+}
+.address-item .address-detail .personal-detail {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+}
+.address-item .address-detail .phone-number {
+    position: absolute;
+    bottom: 10px;
+    color: #888;
+}
+/* 地址按钮 */
+.address-item .address-opera{
+    color: #f76a1e;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    visibility: hidden;
+}
+.address-item:hover .address-opera{
+    visibility: visible;
+}
+.address-item .address-opera.opera-item span {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #f76a1e;
+}
+.address-opera .opera-item:hover{
+    color: #fab01e;
+}
+/* 新地址样式 */
+.address-add {
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    width: 233px;
+    height: 99px;
+    margin-right: 10px;
+    float: left;
+    margin-top: 15px;
+    border: 1px dashed #ddd;
+    text-align: center;
+}
+.address-add .fa {
+    font-size: 55px;
+    height: 100px;
+    line-height: 90px;
+    color: #ccc;
+}
+.address-add .text{
+    position: absolute;
+    color: #bbb;
+    margin-left: 84px;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+/* 订单信息部分 */
+.panel.panel-detail{
+    margin-bottom: 0;
+}
+.product-table{
+    width: 100%;
+    margin: 10px 0;
+    border-collapse: collapse;
+}
+.product-table th{
+    border-bottom: 2px solid #b2d1ff;  
+}
+.product-table td{
+    border-bottom: 1px dotted #ddd;
+    background: #fbfcff;
+    padding-top: 5px;
+}
+.product-table .cell-img{
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+}
+.product-table .cell-img .p-img{
+    width:80px;
+    height: 80px;
+    border: 1px solid #ddd;
+}
+.product-table .cell-info{
+    width: 30%;
+    text-align: left;
+}
+.product-table .cell-price{
+    width: 20%;
+    text-align: center;
+}
+.product-table .cell-count{
+    width: 20%;
+    text-align: center;
+}
+.product-table .cell-total{
+    width: 20%;
+    text-align: center;
+}
+
+/* 订单提交 */
+
+.submit-wrap {
+    float: right;
+    position: relative;
+}
+.submit-wrap .submit-detail {
+    text-align: right;
+
+    border: 1px solid #ff9838;
+    background: #fff;
+    
+}
+.submit-wrap .submit-detail .first-div {
+    text-align: right;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #444;
+    margin-right: 5px;
+}
+.submit-wrap .submit-detail .first-div strong:nth-of-type(3) {
+    font-size: 16px;
+    color: #888;
+}
+.yen {
+    font-family: Arial,Microsoft YaHei,sans-serif;
+}
+.submit-wrap .submit-detail .first-div span {
+    font-size: 26px;
+    color: #f76a1e;
+    font-weight: 900;
+}
+.submit-wrap .submit-detail div:nth-of-type(2) {
+    margin-bottom: 5px;
+}
+.submit-wrap .submit-detail div:nth-of-type(3) {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.submit-wrap .submit-detail .submit-address span {
+    margin-right: 5px;
+}
+.submit-wrap .submit-detail div:nth-of-type(4) {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.submit-wrap .submit-detail div:nth-of-type(5) {
+    margin-bottom:10px;
+    margin-right: 5px;
+}
+.submit-wrap .submit-opera {
+    text-align: right;
+}
+.submit-wrap .submit-opera .return {
+    margin-right: 30px;
+}
+.submit-wrap .submit-opera .submit-btn {
+    display: inline-block;
+    font-size: 16px;
+    background: #ff9838;
+    color: #fff;
+    padding: 7px 25px;
+    cursor: pointer;
+}
+.submit-wrap .submit-shadow{
+    border: 3px solid #fff0e8;
+    min-width: 230px;
+    padding: 10px 10px 10px 20px;
+}

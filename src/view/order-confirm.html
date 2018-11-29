@@ -1,0 +1,79 @@
+<!-- 主页 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<%= require('html-loader!./layout/head-common.html') %>
+	<title>嗯买商城 - <%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<%= require('html-loader!./layout/nav.html') %>
+	<%= require('html-loader!./layout/header.html') %>
+	<div class="crumb">
+		<div class="w">
+			<div class="crumb-con">
+				<a href="./index.html" class="high-light link">EnBuy</a>
+				<span></span>
+				<span class="link-text"> > <%= htmlWebpackPlugin.options.title%></span>
+			</div>
+		</div>
+	</div>
+	<div class="page-wrap w">
+		<div class="panel">
+            <h1 class="panel-title">收货地址</h1>
+            <div class="panel-body address-con">
+				
+            </div>
+        </div>
+        <div class="panel panel-detail">
+			<h1 class="panel-title">确认订单信息</h1>
+			<div class="panel-body product-con">
+				<div class="submit-address">
+					
+				</div>
+			</div>
+			
+		</div>
+		<div class="submit-footer" >
+			<div class="submit-wrap">
+				<div class="submit-detail">
+					<div class="submit-shadow">
+						<div class="first-div">
+							<strong>实付款</strong>
+							<strong class="yen">￥</strong>
+							<span id="final-total-price"></span>
+						</div>
+						<div>
+							<strong>寄送至：</strong>
+							<span class="submit-address">
+								<span class="sb-final-province">- -</span>
+								<span class="sb-final-city">- -</span>
+								<span class="sb-final-detail">- -</span>
+								
+							</span>
+						</div>
+						<div>
+							<strong>手机号：</strong>
+							<span class="sb-final-phone">- -</span>
+						</div>
+						<div>
+							<strong>收货人：</strong>
+							<span class="sb-final-name">- -</span>
+						</div>
+					</div>
+				</div>
+				<div class="submit-opera">
+					<a href="./cart.html" class="return link">
+						<i class="fa fa-mail-reply-all"></i>返回购物车
+					</a>
+					<span class="submit-btn" id="create-order">
+						提交订单
+					</span>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

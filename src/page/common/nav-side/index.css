@@ -1,0 +1,30 @@
+/*
+* @Author: Pace
+* @Date:   2018-11-22 22:05:49
+* @Last Modified by:   Pace
+* @Last Modified time: 2018-11-22 22:29:15
+*/
+/*侧边导航css*/
+.nav-side{
+	float: left;
+	width: 130px;
+	min-height: 100px;
+}
+.nav-side .nav-item{
+	line-height: 25px;
+	font-size: 13px;
+
+}
+.nav-side .nav-item .link{
+	color: #777;
+}
+.nav-side .nav-item.active .link{
+	color: #ff9838;
+}
+/*右侧内容区*/
+.content.with-nav{
+	float: left;
+	width: 950px;
+}
+
+

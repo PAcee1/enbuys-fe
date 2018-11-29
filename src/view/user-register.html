@@ -1,0 +1,75 @@
+<!-- 注册页面 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<%= require('html-loader!./layout/head-common.html') %>
+	<title>嗯买商城 - <%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<%= require('html-loader!./layout/nav-simple.html') %>
+	<div class="page-wrap">
+		<div class="w">
+			<div class="user-con">
+				<h2 class="myh2">用户注册</h2>
+				<div class="user-box">
+					<div class="error-item">
+						<i class="fa fa-minus-circle error-icon" id="error-icon"></i>
+						<p class="err-msg">Error</p>
+					</div>
+					<div class="user-item">
+						<input id="username" class="input-default" placeholder="请输入用户名" autocomplete="off">
+						<label class="label-default-ico" for="username">
+							<i class="fa fa-user-circle"></i>
+						</label>
+					</div>
+					<div class="user-item">
+						<input type="password" id="password" class="input-default" placeholder="请输入密码" autocomplete="off">
+						<label class="label-default-ico" for="password">
+							<i class="fa fa-lock"></i>
+						</label>
+					</div>
+					<div class="user-item">
+						<input type="password" id="passwordConfirm" class="input-default" placeholder="请再次输入密码" autocomplete="off">
+						<label class="label-default-ico" for="passwordConfirm">
+							<i class="fa fa-lock"></i>
+						</label>
+					</div>
+					<div class="user-item">
+						<input id="phone" class="input-default" placeholder="请输入手机号" autocomplete="off">
+						<label class="label-default-ico" for="phone">
+							<i class="fa fa-phone"></i>
+						</label>
+					</div>
+					<div class="user-item">
+						<input id="email" class="input-default" placeholder="请输入邮箱" autocomplete="off">
+						<label class="label-default-ico" for="email">
+							<i class="fa fa-envelope"></i>
+						</label>
+					</div>
+					<div class="user-item">
+						<input id="question" class="input-default" placeholder="请输入密码提示问题" autocomplete="off">
+						<label class="label-default-ico" for="question">
+							<i class="fa fa-question"></i>
+						</label>
+					</div>
+					<div class="user-item">
+						<input id="answer" class="input-default" placeholder="请输入密码提示问题答案" autocomplete="off">
+						<label class="label-default-ico" for="answer">
+							<i class="fa fa-key"></i>
+						</label>
+					</div>
+					<div class="user-item">
+						<a class="btn btn-submit" id="submit">立即注册</a>
+					</div>
+					<div class="link-item">
+						<a class="link-text">已有账号？</a>
+						<a class="link high-light" href="./user-login.html">立即登录</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

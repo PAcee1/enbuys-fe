@@ -1,0 +1,24 @@
+/*
+* @Author: Pace
+* @Date:   2018-11-26 21:02:00
+* @Last Modified by:   Pace
+* @Last Modified time: 2018-11-26 22:49:17
+*/
+.form-line{
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.form-line .label{
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+}
+.form-line .input{
+	height: 25px;
+	line-height: 25px;
+	width: 200px;
+	font-size: 13px;
+	
+}

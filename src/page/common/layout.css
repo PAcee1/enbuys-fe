@@ -1,8 +1,8 @@
 /*
 * @Author: Pace
 * @Date:   2018-11-22 11:28:15
-* @Last Modified by:   Pace
-* @Last Modified time: 2018-11-27 23:27:01
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-11-30 02:21:57
 */
 /*css reset 全局样式*/
 *{
@@ -110,7 +110,7 @@ input[type='checkbox']{
     height: 60px;
     /*border: 1px solid #ddd;*/
     border-radius: 5px;
-    background: url(../../image/icon/loading3.gif)  no-repeat;
+    background: url(../../image/icon/loading2.gif)  no-repeat;
     opacity: .8;
 }
 /*输入框*/

@@ -1,15 +1,21 @@
 {{#list}}
+{{#isActive}}
+<div class="address-item active" data-id="{{id}}">
+{{/isActive}}
+{{^isActive}}
 <div class="address-item" data-id="{{id}}">
+{{/isActive}}
     <div class="address-title ">
-        <span class="province">{{receiverProvince}}</span>
-        <span class="city">{{receiverCity}}</span>
-        <span>(</span>
+        
         <span class="name">{{receiverName}}</span>
-        <span>收)</span>
+        <span>收</span>
         <span class="postcode">{{receiverZip}}</span>
     </div>
     <div class="address-detail">
         <div>
+            <span class="province">{{receiverProvince}}</span>
+            <span class="city">{{receiverCity}}</span>
+            <span class="district">{{receiverDistrict}}</span>
             <span class="personal-detail">
                 {{receiverAddress}}
             </span>

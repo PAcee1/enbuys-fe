@@ -1,8 +1,8 @@
 /*
 * @Author: Pace
 * @Date:   2018-11-22 21:06:57
-* @Last Modified by:   Pace
-* @Last Modified time: 2018-11-27 18:02:11
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-11-30 21:00:35
 */
 
 
@@ -42,11 +42,14 @@
 /* 面包屑导航 */
 .crumb{
 	margin-bottom: 10px;
-	height: 30px;
-	line-height: 30px;
+	height: 35px;
+	line-height: 35px;
 	background: #eee;
-	color: #888;
+	color: #ddd;
 	font-size: 12px;
 	/*border-top: 2px solid #ff9838;*/
+}
+.crumb .link-text{
+	color: #aaa;
 }
 

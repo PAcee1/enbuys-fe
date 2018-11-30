@@ -1,0 +1,119 @@
+<div class="detail-con">
+    <div class="detail-header">
+        有疑问问我
+    </div>
+    <div>
+        <ul class="detail-top">
+            <li class="detail-top-li">
+                <span>订单信息</span> 
+            </li>
+        </ul>
+        <div class="detail-body">
+            <div style="display:block;">
+                <div class="detail-main">
+                    <div class="detail-address">
+                            <dl class="address-memo" >
+                                <dt>收货地址：</dt>
+                                <dd>{{shippingVo.receiverProvince}} {{shippingVo.receiverCity}}
+                                    {{shippingVo.receiverDistrict}} {{shippingVo.receiverAddress}}，{{receiverPhone}}
+                                </dd>
+                            </dl>
+                            <dl class="address-memo" >
+                                    <dt>收货人：</dt>
+                                    <dd>{{shippingVo.receiverName}}</dd>
+                                </dl>
+                            <dl class="address-memo" >
+                                    <dt>收货方式：</dt>
+                                    <dd>快递</dd>
+                                </dl>
+                    </div>
+                    <hr class="detail-hr">
+                    <div class="detail-order">
+                        <h3>订单信息</h3>
+                        <div class="detail-order-detail">
+                            <span class="detail-misc-info notop">
+                                <span class="misc-in" >
+                                    订单编号:
+                                </span>
+                                <span class="misc-info">
+                                        <span>{{orderNo}}</span>
+                                </span>
+                            </span>
+                            
+                            <span class="detail-misc-info notop">
+                                <span class="misc-in" >
+                                    创建时间:
+                                </span>
+                                <span class="misc-info">
+                                        <span>{{createTime}}</span>
+                                </span>
+                            </span>
+                            <span class="detail-misc-info notop">
+                                <span class="misc-in" >
+                                    支付方式:
+                                </span>
+                                <span class="misc-info">
+                                        <span>{{paymentTypeDesc}}</span>
+                                </span>
+                            </span>  
+                            <span class="detail-misc-info ">
+                                    <span class="misc-in" >
+                                        订单状态:
+                                    </span>
+                                    <span class="misc-info">
+                                            <span>{{statusDesc}}</span>
+                                    </span>
+                                </span>  
+                        </div>
+                        
+                        <div class="order-prod">
+                                <table class="prod-list">
+                                    <tbody><tr class="prod-title">
+                                        <th>商品</th>
+                                        <th>属性</th>
+                                        <th>服务</th>
+                                        <th>单价</th>
+                                        <th>数量</th>
+                                        <th>优惠</th>
+                                        <th>总价</th>
+                                    </tr>
+                                    {{#orderItemVoList}}
+                                    <tr class="prod-item">
+                                        <td>
+                                            <div class="prod-info">
+                                                <a href="./detail.html?productId={{productId}}" target="_blank">
+                                                    <img class="img" src="{{imageHost}}{{productImage}}" alt="{{productId}}">
+                                                    <div class="title link-f">手机 亮黑vivo x20</div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>颜色:默认</td>
+                                        <td>七天不满意退换</td>
+                                        <td>
+                                            <span class="yen">¥</span>
+                                            <span class="prod-val">{{currentUnitPrice}}</span>
+                                        </td>
+                                        <td>{{quantity}}</td>
+                                        <td>无</td>
+                                        <td>
+                                            <span class="yen">¥</span>
+                                            <span class="prod-val">{{totalPrice}}</span>
+                                        </td>
+                                    </tr>
+                                    {{/orderItemVoList}}
+                                    
+                                </tbody></table>
+                        </div>
+                    </div>
+                    <div class="detail-footer">
+                        <div class="detail-footer-price">
+                            <span>订单总金额：</span>
+                            <strong class="money">{{payment}}</strong>
+                            <span>元</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,252 @@
+/*
+ * @Author: Pace 
+ * @Date: 2018-11-30 21:32:25 
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-12-01 01:46:47
+ */
+ /* 表样式 */
+ .content.with-nav {
+    float: left;
+    width: 910px;
+    padding: 10px 20px;
+}
+.order-list-title {
+    border: 5px solid #848181;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+table {
+    /* min-height: 0; */
+    /* line-height: normal; */
+    text-align: left;
+    border-collapse: collapse;
+}
+table, table tr td, table tr th {
+    border: none;
+}
+
+/* 表头样式 */
+.order-list-title * {
+    color: #fff;
+    font-weight: 100;
+}
+.order-list-title tr {
+    background: #848181;
+    height: 30px;
+    line-height: 30px;
+}
+.order-list-title * {
+    color: #fff;
+    font-weight: 100;
+}
+.order-list-title .cell:first-of-type {
+    width: 290px;
+}
+.order-list-title th {
+    font-weight: 900;
+}
+.order-list-title .cell:nth-of-type(2), .order-list-title .cell:nth-of-type(3), .order-list-title .cell:nth-of-type(4) {
+    width: 80px;
+}
+.order-list-title .cell:nth-of-type(5) {
+    padding-left: 25px;
+    width: 130px;
+}
+
+/* 主体List样式 */
+.order-list-con table * {
+    color: #666;
+}
+.order-item.active {
+    background: #fff;
+}
+.order-list-con table {
+    width: 100%;
+    background: #fff;
+}
+.order-item {
+    margin-bottom: 10px;
+}
+.order-item.active .order-title {
+    background: #eaf8ff;
+}
+
+.order-item.active tr {
+    border: 1px solid #daefff;
+    padding-right: 10px;
+}
+.order-item .order-title {
+    height: 40px;
+    line-height: 40px;
+    background: #e7e7e7;
+    width: 90%;
+}
+.order-list-con table tr {
+    border: 1px solid #ddd;
+    vertical-align: top;
+}
+.order-item .order-title .order-num  {
+    text-align: center;
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: 900;
+    width: 150px;
+    white-space: nowrap;
+}
+.order-item .order-title .create-date {
+    float: right;
+    display: inline-block;
+    width: 300px;
+}
+
+/* 商品 */
+.order-item .order-con .order-prods {
+    width: 550px;
+}
+.order-item .prod-item {
+    position: relative;
+    border: 1px solid #f3f3f3;
+    margin: 10px;
+    padding: 10px;
+}
+.order-item.active .prod-item {
+    border: 1px solid #f4f4f4;
+}
+.order-item .prod-item .prod-info {
+    float: left;
+    width: 295px;
+}
+.order-item .prod-item .prod-info .type {
+    position: absolute;
+    bottom: 10px;
+    margin-left: 90px;
+    color: #bbb;
+}
+.order-item .prod-item .prod-info .title {
+    margin-left: 10px;
+    width: 200px;
+    float: left;
+    margin-top: -2px;
+}
+.order-item .prod-item .prod-cell.count {
+    width: 60px;
+}
+.order-item .prod-item .prod-cell {
+    float: left;
+    width: 80px;
+    text-align: center;
+}
+.order-list-con table * {
+    color: #666;
+}
+.order-item .prod-item .prod-cell.price .price-val {
+    font-weight: 900;
+}
+.link-f {
+    color: #666!important;
+    cursor: pointer;
+    text-decoration: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.order-item.active .prod-item {
+    border: 1px solid #f4f4f4;
+}
+
+.order-item.active .order-con .order-oper, .order-item.active .order-con .order-sum {
+    border-left: 1px solid #daefff;
+}
+
+.order-item .order-con .order-sum {
+    max-width: 120px;
+    width: 120px;
+    padding-top: 10px;
+    text-align: center;
+    border-left: 1px solid #ddd;
+}
+.order-item.active .order-con .order-sum .price-val {
+    font-weight: 900;
+    font-size: 14px;
+    color: #ff7f13;
+}
+.order-item.active .order-con .order-sum .carriage * {
+    color: #aaa;
+}
+
+.order-item .order-con .order-sum .carriage * {
+    color: #aaa;
+}
+.order-item.active .order-con .order-option {
+    border-left: 1px solid #daefff;
+}
+
+.order-item .order-con .order-option {
+    max-width: 110px;
+    width: 110px;
+    padding-top: 10px;
+    text-align: center;
+    border-left: 1px solid #ddd;
+}
+.order-item.active .order-con .order-option .payWay {
+    text-align: center;
+}
+
+.order-item .order-con .order-option .payWay {
+    text-align: center;
+}
+.order-item.active .order-con .order-option .payWay .payWay-inner {
+    margin: 5px 0;
+    display: inline-block;
+    padding: 1px 3px;
+    color: #6ab8f1;
+    border: 1px solid #6ab8f1;
+    border-radius: 4px;
+}
+.order-item .order-con .order-oper .btn {
+    color: #fff;
+    box-shadow: none;
+}
+.order-item.active .order-con .order-oper .cancel-order {
+    margin-top: 5px;
+}
+.order-item .prod-item .prod-info img {
+    width: 80px;
+    height: 80px;
+    background: #ddd;
+    float: left;
+}
+.order-item .order-con .order-oper {
+    max-width: 110px;
+    width: 110px;
+    padding-top: 10px;
+    text-align: center;
+    border-left: 1px solid #ddd;
+}
+.order-item .order-con .order-option .payWay .payWay-inner {
+    margin: 5px 0;
+    display: inline-block;
+    padding: 1px 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.order-item .order-con .order-sum .price-val {
+    font-weight: 900;
+    font-size: 14px;
+}
+.order-item .order-con .order-oper .btn-white {
+    box-shadow: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    padding: 0 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    width: 70px;
+}

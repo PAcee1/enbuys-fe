@@ -1,0 +1,189 @@
+/*
+ * @Author: Pace 
+ * @Date: 2018-12-01 00:12:02 
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-12-01 01:33:34
+ */
+ .detail-body{
+     background: #fff;
+ }
+.detail-con{
+    position: relative;
+    margin: 20px 0;
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+    color: #404040;
+}
+.detail-header{
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    font-weight: 700;
+    color: #f60;
+}
+.detail-top{
+    position: absolute;
+    left: 20px;
+    z-index: 50;
+}
+.detail-top li{
+    float: left;
+    width: 130px;
+    height: 27px;
+    margin-right: 3px;
+    padding-top: 8px;
+    line-height: 21px;
+    text-align: center;
+    background: url(//assets.alicdn.com/app/trade/img/tabview_bg.gif) 0 6px no-repeat;
+    cursor: pointer;
+}
+.detail-top .detail-top-li{
+    background-position: 0 -41px;
+}
+.detail-top .detail-top-li span{
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+}
+.detail-body{
+    position: relative;
+    top: 29px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    border: 1px solid #AEC7E5;
+}
+.address-memo{
+    line-height: 30px;
+}
+.address-memo dt{
+    float: left;
+    width: 78px;
+    font-weight: 700;
+}
+.address-memo dd{
+    padding-left: 80px;
+    margin-bottom: 4px;
+    word-wrap: break-word;
+}
+.detail-hr{
+    color: #D1D7DC;
+    background-color: #D1D7DC;
+    border: none;
+    height: 1px;
+    margin: 10px 0 5px;
+}
+.detail-order h3{
+    font-size: 12px;
+}
+.detail-order-detail{
+    border-collapse: collapse;
+    border-spacing: 0;
+    line-height: 30px;
+    padding-left: 62px;
+}
+.detail-misc-info{
+    float: left;
+    width: 282px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+.detail-misc-info.notop{
+    border-top: none;
+}
+.detail-footer{
+    padding: 0 14px 0 8px;
+}
+.detail-footer-price{
+    float: right;
+    padding-top: 15px;
+    line-height: 23px;
+    text-align: right;
+    margin-right: 5px;
+}
+.detail-footer-price strong{
+    font-weight: 700;
+    font-size: 18px;
+    color: #f50;
+}
+
+.prod-list {
+    width: 100%;
+}
+
+table {
+    min-height: 0;
+    line-height: normal;
+    text-align: left;
+    border-collapse: collapse;
+}
+table, table tr td, table tr th {
+    border: none;
+}
+.order-prod {
+    padding-top: 80px;
+}
+.content.with-nav table * {
+    color: #666;
+    font-size: 14px;
+}
+.content.with-nav table * {
+    color: #666;
+    font-size: 14px;
+}
+
+.prod-list .prod-title {
+    border-radius: 10px 10px 0 0;
+    background: #eee;
+}
+
+.order-prod .prod-title th {
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+.order-prod .prod-title th:first-of-type {
+    width: 320px;
+    max-width: 320px;
+}
+.order-prod .prod-title th:nth-of-type(2), .order-prod .prod-title th:nth-of-type(3) {
+    width: 120px;
+    max-width: 120px;
+}
+.order-prod .prod-title th:nth-of-type(4) {
+    width: 90px;
+    max-width: 90px;
+}
+.order-prod .prod-title th:nth-of-type(5) {
+    width: 60px;
+    max-width: 60px;
+}
+.order-prod .prod-title th:nth-of-type(6) {
+    width: 110px;
+    max-width: 110px;
+}
+.prod-list tr td {
+    border: 1px solid #eee;
+}
+
+.prod-item * {
+    font-size: 12px!important;
+}
+.prod-item .prod-info .img {
+    width: 80px;
+    height: 80px;
+    background: #ddd;
+    float: left;
+    margin: 10px;
+}
+.prod-item .prod-info .title {
+    float: left;
+    margin-top: 40px;
+    text-align: left;
+    width: 210px;
+}
+.prod-item {
+    text-align: center;
+}
+.link-f:hover {
+    color: #ff9838!important;
+}

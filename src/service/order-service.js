@@ -2,7 +2,7 @@
  * @Author: Pace 
  * @Date: 2018-11-29 21:25:37 
  * @Last Modified by: Pace
- * @Last Modified time: 2018-11-30 20:39:50
+ * @Last Modified time: 2018-12-01 01:40:47
  */
 var _eb = require('util/eb.js');
 
@@ -22,6 +22,40 @@ var _order = {
             //url     : _eb.getServerUrl('/product/list.do'),
             url : "http://localhost:8081/myOrder/create.do",
             data: orderInfo,
+            success : resolve,
+            error   : reject
+        });
+    },
+    //获取订单列表
+    getOrderList: function(listParam, resolve, reject){
+        _eb.request({
+            //url     : _eb.getServerUrl('/product/list.do'),
+            url : "http://localhost:8081/myOrder/list.do",
+            data: listParam,
+            success : resolve,
+            error   : reject
+        });
+    },
+    //获取订单详情
+    getOrderDetail: function(orderNumber, resolve, reject){
+        _eb.request({
+            //url     : _eb.getServerUrl('/product/list.do'),
+            url : "http://localhost:8081/myOrder/detail.do",
+            data: {
+                orderNo : orderNumber
+            },
+            success : resolve,
+            error   : reject
+        });
+    },
+     //取消订单
+     cancelOrder: function(orderNumber, resolve, reject){
+        _eb.request({
+            //url     : _eb.getServerUrl('/product/list.do'),
+            url : "http://localhost:8081/myOrder/cancel.do",
+            data: {
+                orderNo : orderNumber
+            },
             success : resolve,
             error   : reject
         });

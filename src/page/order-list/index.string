@@ -1,0 +1,105 @@
+<table class="order-list-title">
+    <tbody>
+        <tr>
+            <th class="cell">商品</th>
+            <th class="cell">数量</th>
+            <th class="cell">单价</th>
+            <th class="cell">总价</th>
+            <th class="cell">实付款</th>
+            <th class="cell">交易详情</th>
+            <th class="cell">交易操作</th>
+        </tr>
+    </tbody>
+</table>
+<div class="order-list-con">
+    {{#list}}
+    {{#isCancel}}
+    <table class="order-item" data-order-no="{{orderNo}}" data-status="{{status}}">
+    {{/isCancel}}
+    {{^isCancel}}
+    <table class="order-item active" data-order-no="{{orderNo}}" data-status="{{status}}">
+    {{/isCancel}}
+        <tbody>
+        <tr class="order-title">
+            <td colspan="4">
+                <div class="wrap">
+                   
+                    <span class="order-num">
+                        <span>订单号:</span>
+                        <span>{{orderNo}}</span>
+                    </span>
+                    <span class="order-num">
+                            <span>收货人:</span>
+                            <span>{{receiverName}}</span>
+                        </span>
+                    <span class="create-date">订单创建时间：{{createTime}}</span>
+                </div>
+            </td>
+        </tr>
+        <tr class="order-con">
+            <td class="order-prods">
+               {{#orderItemVoList}}
+                <div class="prod-item clearfix">
+                    <div class=" prod-info">
+                        <a href="./detail.html?productId={{productId}}" target="_blank">
+                            <img src="{{imageHost}}{{productImage}}" alt="{{productName}}" class="prod-img">
+                            <div class="title link">{{productName}}</div>
+                        </a>
+                        <!--<div class="type">
+                            规格:默认 颜色:默认
+                        </div>-->
+                    </div>
+                    <div class="prod-cell count">{{quantity}}</div>
+                    <div class="prod-cell price">
+                        <span class="yen">¥</span>
+                        <span class="price-val">{{currentUnitPrice}}</span>
+                    </div>
+                    <div class="prod-cell price">
+                        <span class="yen">¥</span>
+                        <span class="price-val">{{totalPrice}}</span>
+                    </div>
+                </div>
+                {{/orderItemVoList}}
+            </td>
+            <td class="order-sum">
+                <div class="price">
+                    <span class="yen">¥</span>
+                    <span class="price-val">{{payment}}</span>
+                </div>
+                <div class="carriage">
+                    <span>(含运费:</span>
+                    <span class="yen">¥</span>
+                    <span class="carriage-val">0.00</span>
+                    <span>)</span>
+                </div>
+            </td>
+            <td class="order-option">
+                <div>{{statusDesc}}</div>
+                <div class="payWay">
+                <div class="payWay-inner">
+                    在线支付
+                </div>
+                </div>
+                <div>
+                    <a href="./order-detail.html?orderNo={{orderNo}}" target="_blank" class="link">订单详情</a>
+                </div>
+            </td>
+            <td class="order-oper">  
+                
+                 
+                {{#isCancel}}
+                <div class="btn-white btn-mini">已取消</div>
+                {{/isCancel}}
+                {{^isCancel}}
+                <a class="btn btn-mini pay-now">立即支付</a>
+                <div class="cancel-order link-f">取消订单</div> 
+                {{/isCancel}}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    {{/list}}
+    {{^list}}
+        <p class="err-tip">没有查询到订单，请去消费</p>
+    {{/list}}
+</div>

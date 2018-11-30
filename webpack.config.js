@@ -1,8 +1,8 @@
 /*
 * @Author: S1
 * @Date:   2018-11-21 17:19:57
-* @Last Modified by:   Pace
-* @Last Modified time: 2018-11-28 13:38:58
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-11-30 23:51:40
 */
 //引入插件
 var path = require("path");
@@ -35,6 +35,8 @@ var config = {
         'detail' : ['./src/page/detail/index.js'],
         'cart' : ['./src/page/cart/index.js'],
         'order-confirm' : ['./src/page/order-confirm/index.js'],
+        'order-detail' : ['./src/page/order-detail/index.js'],
+        'order-list' : ['./src/page/order-list/index.js'],
         'user-login' : ['./src/page/user-login/index.js'],
         'user-register' : ['./src/page/user-register/index.js'],
         'user-center' : ['./src/page/user-center/index.js'],
@@ -88,6 +90,8 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('detail','商品详情')),
         new HtmlWebpackPlugin(getHtmlConfig('cart','购物车')),
         new HtmlWebpackPlugin(getHtmlConfig('order-confirm','确认订单')),
+        new HtmlWebpackPlugin(getHtmlConfig('order-list','订单列表')),
+        new HtmlWebpackPlugin(getHtmlConfig('order-detail','订单详情')),
         new HtmlWebpackPlugin(getHtmlConfig('result','操作结果')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),
         new HtmlWebpackPlugin(getHtmlConfig('user-center','个人中心')),

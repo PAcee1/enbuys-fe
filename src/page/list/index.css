@@ -1,8 +1,8 @@
 /*
 * @Author: Pace
 * @Date:   2018-11-27 16:09:18
-* @Last Modified by:   Pace
-* @Last Modified time: 2018-11-27 18:31:24
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-12-02 02:19:13
 */
 /* 排序按钮 */
 .sort-con{
@@ -37,12 +37,18 @@
 	position: absolute;
 	top: 8px;
 	right: 8px;
+	color: #111;
 }
-.sort-con .sort-item.asc .fa-sort-desc{
-	opacity: .5;
+.sort-con .sort-item .fa-sort-asc{
+	color: #111;
 }
-.sort-con .sort-item.desc .fa-sort-asc{
+.sort-con .sort-item.active.asc .fa-sort-desc{
 	opacity: .5;
+	color: #ddd;
+}
+.sort-con .sort-item.active.desc .fa-sort-asc{
+	opacity: .5;
+	color: #ddd;
 }
 
 /* list样式 */

@@ -1,8 +1,8 @@
 /*
 * @Author: S1
 * @Date:   2018-11-21 18:12:48
-* @Last Modified by:   Pace
-* @Last Modified time: 2018-11-27 18:22:15
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-12-02 02:02:37
 */
 /* keywords-list */
 .keywords-list{
@@ -128,6 +128,7 @@
 }
 .floor-wrap .floor-list{
 	margin-right: -20px;
+	padding-bottom: 30px;
 	overflow: hidden;
 }
 .floor-wrap .floor-item{
@@ -162,4 +163,17 @@
 	width: 80%;
 	height: 75%;
 	border: none;
+}
+
+/* 提示 */
+.notice-con {
+    background: #c60023;
+    padding: 5px 0;
+    line-height: 30px;
+}
+.notice-con .notice {
+    font-size: 14px;
+    color: #eee;
+    font-weight: 700;
+    text-align: center;
 }

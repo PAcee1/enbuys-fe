@@ -1,8 +1,8 @@
 /*
 * @Author: Pace
 * @Date:   2018-11-23 12:59:29
-* @Last Modified by:   Pace
-* @Last Modified time: 2018-11-23 21:45:56
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-12-02 01:32:14
 */
 /*最外层容器*/
 .page-wrap{
@@ -48,6 +48,8 @@
 	color: red;
 	background: #fde9e9;
 	display: none;
+	border-radius: 4px;
+	width: 234px;
 }
 
 /*错误图标*/
@@ -63,6 +65,11 @@
 .user-con .user-item{
 	position: relative;
 	margin-bottom: 15px;
+}
+.input-default:focus {
+    background: #fff;
+    border: 1px solid #ff9838;
+    color: #666;
 }
 /*fa小icon*/
 .fa{

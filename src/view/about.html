@@ -1,0 +1,36 @@
+<!-- 主页 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<%= require('html-loader!./layout/head-common.html') %>
+	<title>嗯买商城 - <%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<%= require('html-loader!./layout/nav.html') %>
+	<%= require('html-loader!./layout/header.html') %>
+	<div class="crumb">
+		<div class="w">
+			<div class="crumb-con">
+				<a href="./index.html" class="link">EnBuy</a>
+				<span>></span>
+				<span class="high-light link-text">  <%= htmlWebpackPlugin.options.title%></span>
+			</div>
+		</div>
+	</div>
+	<div class="page-wrap w">
+		<%= require('html-loader!./layout/nav-side.html') %>
+		<div class="content with-nav">
+			<div class="panel">
+				<div class="panel-title">About</div>
+				<div class="panel-body">
+					
+                    <div class="h1">邮箱：8709867@qq.com</div>
+					<div class="conwx"><span class="h1">微信：</span> <div class="wx"></div></div>
+                    <img>
+				</div>
+			</div>
+		</div>
+	</div>
+	<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

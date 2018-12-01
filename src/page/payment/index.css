@@ -1,0 +1,64 @@
+/*
+ * @Author: Pace 
+ * @Date: 2018-12-01 22:31:43 
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-12-01 22:34:43
+ */
+ .pay-logo {
+    margin: 20px 0;
+    overflow: hidden;
+}
+.pay-logo .logo {
+    height: 40px;
+    width: 114px;
+    display: inline-block;
+    background: url(../../image/payment-logo.png) round;
+}
+.pay-logo .logo-title {
+    display: inline-block;
+    font-weight: 900;
+    color: #574f4d;
+    margin-top: -5px;
+    vertical-align: middle;
+    height: 22px;
+}
+.pay-bg {
+    background: #00aaef url(../../image/bg-timg.png) 50%;
+    height: 435px;
+    margin-bottom: 40px;
+}
+.payment-con {
+    text-align: center;
+}
+.payment-con .pay-tips {
+    margin: 10px 0;
+}
+.payment-con .pay-img, .payment-con .pay-img img {
+    width: 300px;
+    height: 300px;
+}
+
+.payment-con .pay-img {
+    margin: 0 auto;
+}
+.payment-con .pay-tips .tips-title {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.payment-con .pay-tips * {
+    color: #fff;
+}
+.payment-con .pay-tips .tips-con {
+    font-size: 14px;
+    background: #fff;
+    color: #00aaef;
+    width: 300px;
+    margin: 0 auto;
+    font-weight: 900;
+}
+.payment-con .pay-tips-bottom {
+    font-size: 18px;
+    color: #fff;
+    margin: 10px 0;
+}

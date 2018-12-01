@@ -1,0 +1,29 @@
+<!-- 主页 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<%= require('html-loader!./layout/head-common.html') %>
+	<title>嗯买商城 - <%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<%= require('html-loader!./layout/nav.html') %>
+	
+	<div class="page-wrap">
+        <div class="page-wrap"><div class="w">
+            <div class="pay-logo">
+                <div class="logo"></div>
+                <div class="logo-title">支付沙箱</div>
+            </div>
+        </div>
+         <div class="pay-bg">
+            <div class="w">
+                <div class="payment-con" style="display: block;">
+                    
+                </div>
+            </div>  
+            </div>
+        </div>
+	</div>
+	<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

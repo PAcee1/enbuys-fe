@@ -1,16 +1,34 @@
 /*
 * @Author: Pace
 * @Date:   2018-11-26 20:54:07
-* @Last Modified by:   Pace
-* @Last Modified time: 2018-11-26 21:42:47
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-12-02 00:11:09
 */
-.form-line{
-	height: 30px;
-	line-height: 30px;
-	font-size: 14px;
+.panel-body table {
+    margin: 0 auto;
 }
-.form-line .label{
-	display: inline-block;
-	width: 100px;
-	text-align: center;
+table {
+    min-height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-collapse: collapse;
+}
+table, table tr td, table tr th {
+    border: 1px solid #eee;
+}
+.panel-body table th {
+    max-width: 100px;
+    padding: 5px 40px;
+    text-align: right;
+    color: #888;
+}
+.panel-body table td {
+    padding: 0 50px;
+    width: 100px;
+    max-width: 400px;
+    color: #ff9838;
+}
+.panel-body .btn {
+	margin-top: 10px;
+    margin-left: 43%;
 }

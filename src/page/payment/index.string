@@ -1,0 +1,10 @@
+<div class="pay-tips">
+    <div class="tips-title">支付订单</div>
+    <div class="tips-con">订单号: {{orderNo}}  &nbsp;&nbsp;&nbsp;(超时自动取消)</div>
+</div>
+<div class="pay-img">
+        <img class="ar-code" src="{{qrUrl}}" alt="">
+</div>
+<div class="pay-tips-bottom">
+        请用支付宝APP进行扫码支付
+</div>

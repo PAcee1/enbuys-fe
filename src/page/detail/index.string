@@ -29,8 +29,9 @@
 			<span class="p-count-btn plus">+</span>
 			<span class="p-count-btn minus">-</span>
 		</div>
-		<div class="p-info-item">
+		<div class="p-info-item addCart">
 			<a class="btn cart-add">加入购物车</a>
+			<a class="btn goto-buy">立即购买</a>
 		</div>
 	</div>
 </div>

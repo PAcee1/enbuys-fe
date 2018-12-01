@@ -2,29 +2,29 @@
 <div class="user-info">
 	<div class="form-line">
 		<span class="label">用户名：</span>
-		<span class="text">{{username}}</span>
+		<input class="input" id="phone" autocomplete="off" disabled value="{{username}}">
 	</div>
 	<div class="form-line">	
 		<span class="label">会员等级：</span>
-		<span class="text">{{level}}</span>
+		<input class="input" id="phone"  disabled value="{{level}}">
 	</div>
 	<div class="form-line">
 		<span class="label">电话：</span>
-		<input class="input" id="phone" autocomplete="off" value="{{phone}}"></input>
+		<input class="input border-suc" id="phone" autocomplete="off" placeholder="{{phone}}" onfocus="this.placeholder=''" onblur="this.placeholder='{{phone}}'"></input>
 	</div>
 	<div class="form-line">
-		<span class="label">邮箱：</span>
-		<input class="input" id="email" autocomplete="off" value="{{email}}"></input>
+		<span class="label ">邮箱：</span>
+		<input class="input border-suc" id="email" autocomplete="off" placeholder="{{email}}" onfocus="this.placeholder=''" onblur="this.placeholder='{{email}}'"></input>
 	
 	</div>
 	
 	<div class="form-line">
 		<span class="label">密码提示问题：</span>
-		<input class="input" id="question" autocomplete="off" value="{{question}}"></input>
+		<input class="input border-suc" id="question" autocomplete="off" placeholder="{{question}}" onfocus="this.placeholder=''" onblur="this.placeholder='{{question}}'"></input>
 	</div>
 	<div class="form-line">
 		<span class="label">提示问题答案：</span>
-		<input class="input" id="answer" autocomplete="off" value="{{answer}}"></input>
+		<input class="input border-suc" id="answer" autocomplete="off" placeholder="{{answer}}" onfocus="this.placeholder=''" onblur="this.placeholder='{{answer}}'"></input>
 	</div>
 	<span class="btn btn-submit">提交修改</span>
 </div>

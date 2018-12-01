@@ -91,9 +91,15 @@
                 <div class="btn-white btn-mini">已取消</div>
                 {{/isCancel}}
                 {{^isCancel}}
-                <a class="btn btn-mini pay-now">立即支付</a>
+                {{#isPay}}
+                <div class="confirm-order link-f">确认收货</div> 
+                {{/isPay}}
+                {{^isPay}}
+                <a class="btn btn-mini pay-now" href="./payment.html?orderNo={{orderNo}}">立即支付</a>
                 <div class="cancel-order link-f">取消订单</div> 
+                {{/isPay}}
                 {{/isCancel}}
+                
             </td>
         </tr>
         </tbody>

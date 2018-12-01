@@ -2,7 +2,7 @@
  * @Author: Pace 
  * @Date: 2018-11-30 21:13:48 
  * @Last Modified by: Pace
- * @Last Modified time: 2018-12-01 01:40:01
+ * @Last Modified time: 2018-12-01 23:13:37
  */
 require('page/common/nav/index.js');
 require('page/common/header/index.js');
@@ -47,12 +47,17 @@ var page = {
 				_eb.errorTips(errMsg);
 			});
         });
+        //确认收货
+        $(document).on('click','.confirm-order',function(){
+           alert('尚未开发，请等待');
+        });
     },
 	//加载用户信息
 	loadOrderList : function(){
         var _this = this, 
             $listCon = $('.content.with-nav');
             orderListHtml = '';
+        $listCon.html('<div class="loading"></div>');
 		_order.getOrderList(this.data.listParam,function(res){
             //数据过滤
             _this.dataFilter(res);
@@ -73,12 +78,15 @@ var page = {
 			$listCon.html('<p class="err-tip">订单加载失败，请联系管理员！</p>')
 		})
     },
-    //数据适配
+    //数据适配,判断订单是否关闭
     dataFilter : function (data) {
         var _list = data.list;
         for(var i = 0,length = _list.length;i<length;i++){
-            if(_list[i].status == 0){
+            if(_list[i].status == 0){ // 订单已取消，需要修改样式
                 _list[i].isCancel = true;
+            }
+            if(_list[i].status == 20){ // 订单成功支付，修改按钮
+                _list[i].isPay = true;
             }
         }
     },

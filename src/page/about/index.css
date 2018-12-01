@@ -1,0 +1,28 @@
+/*
+ * @Author: Pace 
+ * @Date: 2018-12-01 23:41:04 
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-12-02 01:22:13
+ */
+
+.h1{
+    /* -webkit-text-stroke: 1.0px #000;
+    text-stroke: 1.0px #000;
+    color:white;
+    font-size:40px;
+    font-weight:bold; */
+    font-size: 18px;
+    font-family: Palatino, Optima, "Source Han Sans CN", "Hiragino Sans GB" Georgia, serif;
+    min-width: 800px;
+}
+.panel .panel-body{
+    padding: 15px;
+}
+.wx{
+    position: relative;
+    background: url(../../image/wx.jpg) round;
+    width: 146px;
+    height: 146px;
+    margin-left: 53px;
+    margin-top:-19px; 
+}

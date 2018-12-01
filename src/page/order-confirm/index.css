@@ -2,7 +2,7 @@
  * @Author: Pace 
  * @Date: 2018-11-29 21:24:17 
  * @Last Modified by: Pace
- * @Last Modified time: 2018-11-30 20:48:30
+ * @Last Modified time: 2018-12-01 22:17:37
  */
  
 /* 地址部分的样式 */
@@ -27,7 +27,7 @@
     
 }
 .page-wrap .address-item.active{
-    background: #fff url(//s.avenda2333.cn/ymall_fe/dist/resource/addr-border.png);
+    background: #fff url(../../image/addr-border.png);
     border: 1px solid #f5f5f5;
 }
 .address-item:hover{

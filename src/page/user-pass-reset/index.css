@@ -1,8 +1,8 @@
 /*
 * @Author: Pace
 * @Date:   2018-11-23 23:04:38
-* @Last Modified by:   Pace
-* @Last Modified time: 2018-11-23 23:36:21
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-12-02 01:38:22
 */
 /*最外层容器*/
 .page-wrap{
@@ -52,6 +52,8 @@
 	color: red;
 	background: #fde9e9;
 	display: none;
+	border-radius: 4px;
+	width: 234px;
 }
 
 /*错误图标*/

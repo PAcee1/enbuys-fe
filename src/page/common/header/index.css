@@ -2,9 +2,8 @@
 * @Author: Pace
 * @Date:   2018-11-22 21:06:57
  * @Last Modified by: Pace
- * @Last Modified time: 2018-11-30 21:00:35
+ * @Last Modified time: 2018-12-02 01:22:51
 */
-
 
 /*logo div样式*/
 .logo-wrap{
@@ -12,31 +11,71 @@
 	height: 109px;
 	position: absolute;
 	border-bottom: 1px solid #f5f5f5;
+	margin-right: 20px;
 }
 .header .logo{
 	display: block;
-	padding: 15px 0 0 25px;
+	padding: 20px 0 0 45px;
 }
 /*头部标题搜索样式*/
 .header .search-con{
-	padding: 40px 0 30px 250px; /*设置边距*/
+	display: block;
+    float: left;
+    margin-top: 2.5rem;
+    position: relative;
+	margin-left: 235px;
+	margin-bottom: 30px;
 }
 .header .search-con .search-input{
-	width: 500px;
-	height: 40px;
-	line-height: 40px;
-	padding-left: 10px;
-	font-size: 15px;
-	border: 1px solid #999;
+	float: left;
+    height: 30px;
+    line-height: 20px;
+    border-radius: 1rem 0 0 1rem;
+    width: 450px;
+	color: #ff9838;
 	outline: none;
-	border-radius: 1rem 0 0 1rem;
+    padding: 5px 15px;
+    border: 1px solid #ccc;
 }
 .header .search-con .search-btn{
 	position: absolute;
 	height: 42px;
 	width: 75px;
 	border-radius: 0 1rem 1rem 0;
-	box-shadow: ;
+	margin-left: -2px;
+}
+
+.header .focus-me {
+	margin: 8px -31px 1px 85%;
+    position: absolute;
+    float: right;
+    width: auto;
+    height: auto;
+    border: 1px solid #ff9838;
+    padding: 0 5px 5px;
+    background: #fff;
+    border-radius: 5px;
+}
+.header .QA {
+    background: url(../../../image/wx.jpg) round;
+    width: 70px;
+	height: 70px;
+	color: #ff9838;
+}
+.header .focus-me .focus-me-close {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #ff9838;
 }
 
 /* 面包屑导航 */

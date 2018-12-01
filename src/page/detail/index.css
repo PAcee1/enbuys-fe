@@ -67,6 +67,10 @@
     padding: 0 10px;
     margin-top: 20px;
 }
+.intro-wrap .p-info-con .p-info-item.addCart{
+    text-align: right;
+    margin-top: 100px;
+}
 .intro-wrap .p-info-con .p-info-item .label{
     display: inline-block;
     width: 50px;
@@ -132,6 +136,21 @@
 }
 .intro-wrap .p-info-con .p-count-con .p-count-btn.minus{
     bottom: 0;
+}
+.btn.goto-buy{
+    height: 50px;
+    line-height: 50px;
+    width: 110px;
+    font-size: 19px;
+    background: #e65d63;
+    box-shadow: 0 3px 10px #e65d63;
+}
+.btn.cart-add{
+    height: 50px;
+    line-height: 50px;
+    width: 110px;
+    font-size: 19px;
+    margin-right: 10px;
 }
 /* 商品详细信息 */
 .detail-wrap{

@@ -1,24 +1,39 @@
 /*
 * @Author: Pace
 * @Date:   2018-11-26 23:23:22
-* @Last Modified by:   Pace
-* @Last Modified time: 2018-11-26 23:24:09
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-12-02 00:29:14
 */
-.form-line{
-	height: 30px;
-	line-height: 30px;
-	font-size: 14px;
-	margin-bottom: 10px;
+.panel .form-line .label {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: right;
+    color: #666;
+    width: 100px;
 }
-.form-line .label{
-	display: inline-block;
-	width: 100px;
-	text-align: center;
+.form-line .input {
+    width: 150px;
+    padding-left: 10px;
+    height: 32px;
+    outline: none;
+    border-radius: 4px;
+    font-size: 14px;
+	background: #f1f1f1;
+    border: 1px solid #9bddff;
+    color: #555;
 }
-.form-line .input{
-	height: 25px;
-	line-height: 25px;
-	width: 200px;
-	font-size: 13px;
-	
+
+.panel .form-line {
+    text-align: center;
+    margin-left: -110px;
+    margin-bottom: 25px;
+}
+.form-line .input:focus {
+    background: #fff;
+    border: 1px solid #ff9838;
+    color: #666;
+}
+
+.btn-submit{
+	margin-left: 43%;
 }

@@ -48,6 +48,26 @@
                                         <span>{{createTime}}</span>
                                 </span>
                             </span>
+                            {{#isCancel}}
+                            <span class="detail-misc-info notop">
+                                <span class="misc-in" >
+                                    关闭时间:
+                                </span>
+                                <span class="misc-info">
+                                        <span>{{closeTime}}</span>
+                                </span>
+                            </span>
+                            {{/isCancel}}
+                            {{#isPay}}
+                            <span class="detail-misc-info notop">
+                                <span class="misc-in" >
+                                    付款时间:
+                                </span>
+                                <span class="misc-info">
+                                        <span>{{paymentTime}}</span>
+                                </span>
+                            </span>
+                            {{/isPay}}
                             <span class="detail-misc-info notop">
                                 <span class="misc-in" >
                                     支付方式:
@@ -57,13 +77,13 @@
                                 </span>
                             </span>  
                             <span class="detail-misc-info ">
-                                    <span class="misc-in" >
-                                        订单状态:
-                                    </span>
-                                    <span class="misc-info">
-                                            <span>{{statusDesc}}</span>
-                                    </span>
-                                </span>  
+                                <span class="misc-in" >
+                                    订单状态:
+                                </span>
+                                <span class="misc-info">
+                                        <span>{{statusDesc}}</span>
+                                </span>
+                            </span>  
                         </div>
                         
                         <div class="order-prod">

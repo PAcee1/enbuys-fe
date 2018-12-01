@@ -1,8 +1,8 @@
 /*
 * @Author: Pace
 * @Date:   2018-11-27 20:56:20
-* @Last Modified by:   Pace
-* @Last Modified time: 2018-11-28 21:43:27
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-12-02 01:53:22
 */
 require('page/common/nav/index.js');
 require('page/common/header/index.js');
@@ -78,10 +78,25 @@ var page = {
 				productId : _this.data.productId,
 				count : $('.p-count').val()
 			},function(res){
-				window.location.href = './result.html?type=cart-add';
+				window.location.href = './result.html?type=cart-add&';
 			},function(errMsg){
 				_eb.errorTips(errMsg);
 			});
+		});
+		//立即购买
+		$(document).on('click','.goto-buy',function(){
+			_cart.addToCart({
+				productId : _this.data.productId,
+				count : $('.p-count').val()
+			},function(res){
+				window.location.href = './order-confirm.html';
+			},function(errMsg){
+				_eb.errorTips(errMsg);
+			});
+		});
+		//查看评价
+		$(document).on('click','.tab-item',function(){
+			alert('尚未开发，请等待.');
 		});
 	},
 	//加载商品详情

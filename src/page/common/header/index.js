@@ -1,8 +1,8 @@
 /*
 * @Author: Pace
 * @Date:   2018-11-22 21:06:51
-* @Last Modified by:   Pace
-* @Last Modified time: 2018-11-27 16:15:52
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-12-02 01:11:48
 */
 require('./index.css');
 
@@ -33,6 +33,9 @@ var header = {
             if(e.keyCode === 13){
                 _this.searchSubmit();
             }
+        });
+        $('#focus-me-close').click(function(){
+            $('#focus-me').hide();
         });
     },
     //搜索提交

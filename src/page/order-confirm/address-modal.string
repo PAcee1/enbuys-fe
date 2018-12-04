@@ -57,14 +57,14 @@
                     <span>收件人手机号</span>
                 </label>
                 <input type="text" class="form-item" id="receiver-phone"
-                    value="{{data.receiverPhone}}" placeholder="请输入11位手机号">
+                    placeholder="请输入11位手机号"  value="{{data.receiverPhone}}">
             </div>
             <div class="form-line">
                 <label for="receiver-postcode" class="label" >
                     <span>邮政编码</span>
                 </label>
                 <input type="text" class="form-item" id="receiver-postcode"
-                    value="{{data.receiverZip}}" placeholder="如：000000">
+                    placeholder="如：000000"  value="{{data.receiverZip}}">
             </div>
             <div class="form-line save-address">
                 <input type="hidden" id="receiver-id" value="{{data.id}}">

@@ -2,10 +2,12 @@
  * @Author: Pace 
  * @Date: 2018-11-29 21:23:38 
  * @Last Modified by: Pace
- * @Last Modified time: 2018-11-30 21:03:57
+ * @Last Modified time: 2018-12-04 11:53:44
  */
 require('page/common/header/index.js');
 require('page/common/nav/index.js');
+require('page/common/nav/index.js');
+require('page/distpicker/dist/distpicker.js');
 require('./index.css');
 var templateAddress =  require('./address-list.string');
 var templateProduct =  require('./product-list.string');

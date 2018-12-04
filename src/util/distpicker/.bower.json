@@ -1,0 +1,15 @@
+{
+  "name": "distpicker",
+  "homepage": "https://github.com/fengyuanchen/distpicker",
+  "version": "2.0.5",
+  "_release": "2.0.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.5",
+    "commit": "379747a79bc1fd5040b5e245835ed896b59ac71e"
+  },
+  "_source": "https://github.com/fengyuanchen/distpicker.git",
+  "_target": "^2.0.5",
+  "_originalSource": "distpicker",
+  "_direct": true
+}

@@ -2,13 +2,13 @@
  * @Author: Pace 
  * @Date: 2018-11-30 12:04:59 
  * @Last Modified by: Pace
- * @Last Modified time: 2018-11-30 20:34:16
+ * @Last Modified time: 2018-12-02 21:39:58
  * 添加/修改地址
  */
 var templateAddressModal =  require('./address-modal.string');
 var _address = require('service/address-service.js'); 
 var _eb = require('util/eb.js');
-
+// require('../../util/distpicker/dist/distpicker.js');
 var addressModal = {
 	show : function(option){
         // option绑定

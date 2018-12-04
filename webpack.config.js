@@ -2,7 +2,7 @@
 * @Author: S1
 * @Date:   2018-11-21 17:19:57
  * @Last Modified by: Pace
- * @Last Modified time: 2018-12-01 23:18:01
+ * @Last Modified time: 2018-12-02 21:55:35
 */
 //引入插件
 var path = require("path");
@@ -45,12 +45,13 @@ var config = {
         'user-pass-reset' : ['./src/page/user-pass-reset/index.js'],
         'user-pass-update' : ['./src/page/user-pass-update/index.js'],
         'result' : ['./src/page/result/index.js'],
-        'about' : ['./src/page/about/index.js']
+        'about' : ['./src/page/about/index.js'],
+        'd' : ['./src/page/about/index.js']
     },
     //出口
     output:{
-        path: path.resolve(__dirname,'./dist'),
-        publicPath : '/dist',
+        path: __dirname+'/dist/',
+        publicPath : 1 == WEBPACK_ENV ? '/dist/' : '//s.enbuys.com/enbuy-fe/dist/',//'/dist/',//
         filename: 'js/[name].js'
     },
     externals:{
@@ -60,7 +61,12 @@ var config = {
         loaders:[
             { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader","css-loader") },
             { test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=100&name=resource/[name].[ext]' },
-            { test: /\.string$/, loader: 'html-loader'}
+            { test: /\.string$/, loader: 'html-loader',
+                query:{
+                    minimize: true,
+                    removeAttributeQuotes : false
+                }
+            }
         ] 
 
     },

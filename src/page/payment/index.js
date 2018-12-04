@@ -2,7 +2,7 @@
  * @Author: Pace 
  * @Date: 2018-12-01 22:21:28 
  * @Last Modified by: Pace
- * @Last Modified time: 2018-12-01 22:50:59
+ * @Last Modified time: 2018-12-02 21:51:42
  */
 require('page/common/nav/index.js');
 require('page/common/header/index.js');
@@ -14,7 +14,7 @@ var templateIndex = require('./index.string');
 //page 逻辑部分
 var page = {
     data : {
-        orderNumber : _eb.getUrlParam('orderNo')
+        orderNumber : _eb.getUrlParam('orderNumber')
     },
 	init : function(){
         this.onLoad();

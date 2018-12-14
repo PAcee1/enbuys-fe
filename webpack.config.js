@@ -2,7 +2,7 @@
 * @Author: S1
 * @Date:   2018-11-21 17:19:57
  * @Last Modified by: Pace
- * @Last Modified time: 2018-12-02 21:55:35
+ * @Last Modified time: 2018-12-14 22:29:31
 */
 //引入插件
 var path = require("path");
@@ -51,7 +51,7 @@ var config = {
     //出口
     output:{
         path: __dirname+'/dist/',
-        publicPath : 1 == WEBPACK_ENV ? '/dist/' : '//s.enbuys.com/enbuy-fe/dist/',//'/dist/',//
+        publicPath : 1 == WEBPACK_ENV ? '/dist/' : '//s.enbuys.com/enbuys-fe/dist/dist/',//'/dist/',//
         filename: 'js/[name].js'
     },
     externals:{

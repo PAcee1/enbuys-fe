@@ -41,12 +41,12 @@
 			</label>
 		</td>
 		<td class="cart-cell cell-img">
-			<a class="link" href="./detail.htmk?productId={{productId}}">
+			<a class="link" href="./detail.html?productId={{productId}}">
 			<img src="{{imageHost}}{{productMainImage}}" class="p-img" alt="{{productName}}">
 			</a>
 		</td>
 		<td class="cart-cell cell-info">
-			<a class="link cell-name" href="./detail.htmk?productId={{productId}}">{{productName}}</a>
+			<a class="link cell-name" href="./detail.html?productId={{productId}}">{{productName}}</a>
 		</td>
 		<td class="cart-cell cell-price list-price">￥{{productPrice}}</td>
 		<td class="cart-cell cell-count">

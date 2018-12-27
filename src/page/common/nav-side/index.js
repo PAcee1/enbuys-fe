@@ -1,8 +1,8 @@
 /*
 * @Author: Pace
 * @Date:   2018-11-22 22:04:05
-* @Last Modified by:   Pace
-* @Last Modified time: 2018-11-26 23:30:52
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-12-20 15:29:13
 */
 /*
 * @Author: Pace
@@ -20,8 +20,9 @@ var navSide = {
 		name : '',
 		navList : [
 			{name: 'user-center',desc : '个人中心', href : './user-center.html'},
-			{name: 'order-list',desc : '我的订单', href : './order-list.html'},
 			{name: 'user-pass-update',desc : '修改密码', href : './user-pass-update.html'},
+			{name: 'user-address',desc : '地址管理', href : './user-address.html'},
+			{name: 'order-list',desc : '我的订单', href : './order-list.html'},
 			{name: 'about',desc : '关于嗯买', href : './about.html'}
 		]
 	},

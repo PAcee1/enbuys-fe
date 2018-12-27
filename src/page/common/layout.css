@@ -2,7 +2,7 @@
 * @Author: Pace
 * @Date:   2018-11-22 11:28:15
  * @Last Modified by: Pace
- * @Last Modified time: 2018-11-30 22:34:01
+ * @Last Modified time: 2018-12-20 15:48:14
 */
 /*css reset 全局样式*/
 *{
@@ -154,8 +154,9 @@ input::-webkit-input-placeholder {
 
  /* panel */
  .panel{
- 	padding: 10px;
- 	margin-bottom: 10px;
+ 	padding: 10px 20px;
+	 margin-bottom: 10px;
+	margin-left: 15px;
  	background: #fff;
  }
  .panel .panel-title{

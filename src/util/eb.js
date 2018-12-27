@@ -2,7 +2,7 @@
 * @Author: Pace
 * @Date:   2018-11-21 22:44:30
  * @Last Modified by: Pace
- * @Last Modified time: 2018-12-14 22:40:13
+ * @Last Modified time: 2018-12-20 14:50:17
 * 一个通用工具js
 */
 var Hogan = require('hogan');
@@ -43,9 +43,9 @@ var _eb = {
 	// 获取服务器地址
     getServerUrl : function(path){
         //测试环境
-        //return "http://localhost:8081" + path;
+        return "http://localhost:8081" + path;
         //线上环境
-        return "http://www.enbuys.com" + path;
+        //return "http://www.enbuys.com" + path;
     },
     // 获取url参数
     getUrlParam : function(name){

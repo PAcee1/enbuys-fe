@@ -1,19 +1,22 @@
 /*
 * @Author: Pace
 * @Date:   2018-11-22 22:05:49
-* @Last Modified by:   Pace
-* @Last Modified time: 2018-11-22 22:29:15
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-12-20 15:42:38
 */
 /*侧边导航css*/
 .nav-side{
 	float: left;
-	width: 130px;
+	width: 120px;
 	min-height: 100px;
+	background: #fff;
+	text-align: center;
+	padding:10px 0;
 }
 .nav-side .nav-item{
 	line-height: 25px;
 	font-size: 13px;
-
+	padding-bottom: 10px;
 }
 .nav-side .nav-item .link{
 	color: #777;
@@ -23,8 +26,9 @@
 }
 /*右侧内容区*/
 .content.with-nav{
-	float: left;
+	/* margin-left: 135px; */
 	width: 950px;
+	float: left;
 }
 
 

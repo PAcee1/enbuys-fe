@@ -1,0 +1,109 @@
+
+{{#list}}
+
+{{#isActive}}
+<div class="address-item active" data-id="{{id}}">
+{{/isActive}}
+{{^isActive}}
+<div class="address-item" data-id="{{id}}">
+{{/isActive}}
+    <div class="address-title ">
+        
+        <span class="name">{{receiverName}}</span>
+        <span>收</span>
+        <span class="postcode">{{receiverZip}}</span>
+    </div>
+    <div class="address-detail">
+        <div>
+            <span class="province">{{receiverProvince}}</span>
+            <span class="city">{{receiverCity}}</span>
+            <span class="district">{{receiverDistrict}}</span>
+            <span class="personal-detail">
+                {{receiverAddress}}
+            </span>
+        </div>
+        <div class="phone-number">
+            {{receiverPhone}}
+        </div>
+    </div>
+    <div class="address-opera">
+        <span class="opera-item address-update">编辑</span>
+        <span class="opera-item address-delete">删除</span>
+    </div>
+
+</div>
+{{/list}}
+</div>
+<div class="modal-contaniner">
+        <div class="modal-header">
+            {{#isUpdate}}
+                <div class="modal-title">
+                    修改地址
+                </div>
+            {{/isUpdate}}
+            {{^isUpdate}}
+            <div class="modal-title">
+                添加新地址
+            </div>
+            {{/isUpdate}}
+        </div>
+        <div class="modal-body">
+            <div class="form">
+                <div class="form-line">
+                    <label for="receiver-name" class="label">
+                        <strong>*</strong>
+                        <span>收件人姓名</span>
+                    </label>
+                    <input type="text" class="form-item" id="receiver-name" 
+                        placeholder="请输入收件人姓名" value="{{data.receiverName}}">
+                </div>
+                <div class="form-line">
+                    <label for="receiver-province" class="label">
+                        <strong>*</strong>
+                        <span>所在城市</span>
+                    </label>
+                    <div id="selectadd" data-toggle="distpicker">
+                        {{#isUpdate}}
+                        <select id="receiver-province" data-province="{{data.receiverProvince}}"></select>
+                        <select id="receiver-city" data-city="{{data.receiverCity}}"></select>
+                        <select id="receiver-area" data-district="{{data.receiverDistrict}}"></select>
+                        {{/isUpdate}}
+                        {{^isUpdate}}
+                        <select id="receiver-province" data-province="- 选择省 -"></select>
+                        <select id="receiver-city" data-city="- 选择市 -"></select>
+                        <select id="receiver-area" data-district="- 选择区 -"></select>
+                        {{/isUpdate}}
+                    </div>
+                </div>
+                <div class="form-line">
+                    <label for="receiver-address" class="label">
+                        <strong>*</strong>
+                        <span>详细地址</span>
+                    </label>
+                    <textarea name id="receiver-address" 
+                        placeholder="请精确到门牌号" >{{data.receiverAddress}}</textarea>
+                </div>
+                <div class="form-line">
+                    <label for="receiver-phone" class="label">
+                        <strong>*</strong>
+                        <span>收件人手机号</span>
+                    </label>
+                    <input type="text" class="form-item" id="receiver-phone"
+                        placeholder="请输入11位手机号"  value="{{data.receiverPhone}}">
+                </div>
+                <div class="form-line">
+                    <label for="receiver-postcode" class="label" >
+                        <span>邮政编码</span>
+                    </label>
+                    <input type="text" class="form-item" id="receiver-postcode"
+                        placeholder="如：000000"  value="{{data.receiverZip}}">
+                </div>
+                <div class="form-line save-address">
+                    <input type="hidden" id="receiver-id" value="{{data.id}}">
+                    <div id="submit-save-address">保存收货地址</div>
+                    <div id="submit-cancel-address">取消</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    

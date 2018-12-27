@@ -1,0 +1,271 @@
+/*
+ * @Author: Pace 
+ * @Date: 2018-12-20 15:57:51 
+ * @Last Modified by: Pace
+ * @Last Modified time: 2018-12-21 09:57:33
+ */
+ 
+/* 地址部分的样式 */
+.panel-body.address-con{
+    margin-right: -20px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    transition: all 2s;
+}
+.address-item,
+.address-add{
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    width: 233px;
+    height: 99px;
+    margin-right: 10px;
+    float: left;
+    margin-top: 15px;
+    border: 1px dashed #ddd;
+    color: #666;
+    
+}
+.page-wrap .address-item.active{
+    background: #fff url(../../image/addr-border.png);
+    border: 1px solid #f5f5f5;
+}
+.address-item:hover{
+    background: #fafafa;
+}
+/* 地址标题title */
+.address-item .address-title{
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+.address-item .address-title .name {
+    font-weight: 900;
+    color: #f76a1e;
+}
+.address-item .address-title .postcode {
+    color: #aaa;
+    margin-left: 10px;
+    float: right;
+}
+/* 地址detail */
+.address-item .address-detail{
+    margin-top: 10px;
+}
+.address-item .address-detail .personal-detail {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.address-item .address-detail .phone-number {
+    position: absolute;
+    bottom: 10px;
+    color: #888;
+}
+/* 地址按钮 */
+.address-item .address-opera{
+    color: #f76a1e;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    visibility: hidden;
+}
+.address-item:hover .address-opera{
+    visibility: visible;
+}
+.address-item .address-opera.opera-item span {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #f76a1e;
+}
+.address-opera .opera-item:hover{
+    color: #fab01e;
+}
+/* 新地址样式 */
+.address-add {
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    width: 233px;
+    height: 99px;
+    margin-right: 10px;
+    float: left;
+    margin-top: 15px;
+    border: 1px dashed #ddd;
+    text-align: center;
+}
+.address-add .fa {
+    font-size: 55px;
+    height: 100px;
+    line-height: 90px;
+    color: #ccc;
+}
+.address-add .text{
+    position: absolute;
+    color: #bbb;
+    margin-left: 84px;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+/* .modal-contaniner{
+    border: 2px solid #ff9838;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 550px;
+    height: 390px;
+    background: #fff;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+} */
+.modal-contaniner{
+    margin-top: 20px;   
+    position: relative;
+    float: left;
+    width: 100%;
+}
+/* 弹窗头部 */
+.modal-contaniner .modal-header {
+    text-align: left;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    /* background: #ff9838; */
+    border-bottom: 1px solid #eee;
+    vertical-align: bottom;
+    overflow: hidden;
+    border-top: 2px solid #ffbc79;
+}
+.modal-contaniner .modal-header .modal-title{
+    display: block;
+    margin-top: 9px;
+    font-size: 14px;
+    color: #555;
+    margin-left: 15px;
+}
+.modal-contaniner .modal-header .close {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 20px;
+    line-height: 18px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.modal-contaniner .modal-header .close i {
+    margin-top: 5px;
+    margin-left: 4.2px;
+    display: inline-block;
+    font-size: 16px;
+    color: #555;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+}
+/* 弹窗主体内容 */
+.modal-contaniner .modal-body {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+}
+.modal-contaniner .modal-body .form-line {
+    padding: 10px 0;
+}
+.modal-contaniner .modal-body .label {
+    text-align: right;
+    float: left;
+    width: 90px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 10px;
+}
+.modal-contaniner .modal-body .label strong {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    color: #ff3000;
+    font-size: 14px;
+}
+.modal-contaniner .modal-body .label * {
+    color: #666;
+}
+.modal-contaniner .modal-body input {
+    outline: none;
+    padding: 0 5px;
+    height: 25px;
+    width: 300px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+}
+.modal-contaniner .modal-body select {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    height: 25px;
+    outline: none;
+    color: #888;
+    font-size: 12px;
+}
+.modal-contaniner .modal-body option::-ms-expand{ display: none; }
+.modal-contaniner .modal-body option{
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari 和 Chrome */
+    appearance:none;
+}
+/* --背景色字体颜色--*/
+.modal-contaniner .modal-body option:hover{
+    color:#fff;
+    background-color:#1E90FF;
+}
+.modal-contaniner .modal-body textarea {
+    resize: none;
+    width: 300px;
+    height: 60px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #ddd;
+    font-size: 12px;
+}
+.modal-contaniner #submit-save-address {
+    background: #ff9838;
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: -5px;
+    margin-left: 100px;
+    font-weight: 500;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.modal-contaniner #submit-cancel-address{
+    background: #ff9838;
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: -5px;
+    margin-left: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.modal-contaniner .modal-body input:focus, .modal-contaniner .modal-body textarea:focus {
+    border: 1px solid #ff9838;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color:#b3b3b3;
+}

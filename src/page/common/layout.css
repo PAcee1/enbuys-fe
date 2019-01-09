@@ -2,7 +2,7 @@
 * @Author: Pace
 * @Date:   2018-11-22 11:28:15
  * @Last Modified by: Pace
- * @Last Modified time: 2018-12-20 15:48:14
+ * @Last Modified time: 2018-12-28 11:27:04
 */
 /*css reset 全局样式*/
 *{
@@ -190,4 +190,40 @@ input::-webkit-input-placeholder {
     clear:both;
     overflow:hidden;
     visibility:hidden
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 10px;
+	background-color: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-track {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, 0.2);
+	transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	/* Firefox 4 */
+	
+	-webkit-transition: all 0.4s ease;
+	/* Safari 和 Chrome */
+	
+	-o-transition: all 0.4s ease;
+	/* Opera */
+}
+::-webkit-scrollbar-thumb:hover {
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	/* Firefox 4 */
+	
+	-webkit-transition: all 0.4s ease;
+	/* Safari 和 Chrome */
+	
+	-o-transition: all 0.4s ease;
+	/* Opera */
 }

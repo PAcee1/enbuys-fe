@@ -2,7 +2,7 @@
  * @Author: Pace 
  * @Date: 2018-11-30 23:56:42 
  * @Last Modified by: Pace
- * @Last Modified time: 2018-12-01 23:15:46
+ * @Last Modified time: 2019-01-04 10:23:10
  */
 require('page/common/nav/index.js');
 require('page/common/header/index.js');
@@ -32,7 +32,7 @@ var page = {
     bindEvent: function(){
 
     },
-	//加载用户信息
+	//加载订单详情信息
 	loadOrderDeatil : function(){
         var _this = this, 
             $content = $('.content.with-nav');

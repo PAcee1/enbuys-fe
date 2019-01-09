@@ -2,7 +2,7 @@
  * @Author: Pace 
  * @Date: 2018-11-30 21:13:48 
  * @Last Modified by: Pace
- * @Last Modified time: 2018-12-01 23:13:37
+ * @Last Modified time: 2019-01-03 21:52:47
  */
 require('page/common/nav/index.js');
 require('page/common/header/index.js');
@@ -52,7 +52,7 @@ var page = {
            alert('尚未开发，请等待');
         });
     },
-	//加载用户信息
+	//加载订单信息
 	loadOrderList : function(){
         var _this = this, 
             $listCon = $('.content.with-nav');

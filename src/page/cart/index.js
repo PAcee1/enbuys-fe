@@ -1,8 +1,8 @@
 /*
 * @Author: Pace
 * @Date:   2018-11-28 13:39:13
-* @Last Modified by:   Pace
-* @Last Modified time: 2018-11-28 22:58:44
+ * @Last Modified by: Pace
+ * @Last Modified time: 2019-04-13 13:43:11
 */
 
 require('page/common/header/index.js');
@@ -178,6 +178,7 @@ var page = {
 		//缓存购物车信息
 		this.data.cartInfo = data;
 		//生成html
+		debugger;
 		var cartHtml = _eb.renderHtml(templateIndex,data);
 		$('.page-wrap').html(cartHtml);
 		//通知导航的购物车更新数量

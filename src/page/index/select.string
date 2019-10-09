@@ -1,0 +1,8 @@
+<select id="select_test">
+        {{name}}
+    <option value="ces">请选择</option>
+    {{#cartVoList}}
+    <option value="{{parentId}}">{{name}}</option>
+    {{/cartVoList}}
+    
+</select>

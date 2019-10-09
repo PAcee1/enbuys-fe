@@ -2,7 +2,7 @@
 * @Author: S1
 * @Date:   2018-11-21 18:12:48
  * @Last Modified by: Pace
- * @Last Modified time: 2018-12-02 02:02:37
+ * @Last Modified time: 2019-04-13 13:18:35
 */
 /* keywords-list */
 .keywords-list{
@@ -47,6 +47,15 @@
 .banner-con .banner-img{
 	width: 100%;
 	height: 320px;
+}
+
+.header .select_index {
+    display: block;
+    float: left;
+    margin-top: 2.5rem;
+    position: relative;
+    margin-left: 235px;
+    margin-bottom: 30px;
 }
 /* banner前一张箭头，后一张箭头 */
 .banner-con .banner-arrow{

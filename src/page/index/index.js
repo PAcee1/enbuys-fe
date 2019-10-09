@@ -1,8 +1,8 @@
 /*
 * @Author: S1
 * @Date:   2018-11-21 17:11:36
-* @Last Modified by:   Pace
-* @Last Modified time: 2018-11-27 16:04:02
+ * @Last Modified by: Pace
+ * @Last Modified time: 2019-10-09 17:44:39
 */
 
 // var $ = require('jquery');
@@ -13,6 +13,8 @@ require('util/slider/index.js');
 var templateBanner =  require('./banner.string');
 var navSide =  require('page/common/nav-side/index.js');
 var _eb = require('util/eb.js');
+var templateIndex = require('./select.string');
+var _order = require('service/order-service.js');
 
 $(function(){
 	//渲染banner的html
@@ -28,4 +30,7 @@ $(function(){
 		var forward = $(this).hasClass('prev')? 'prev' : 'next';
 		$slider.data('unslider')[forward]();
 	});
+	page.loadCategory();
 });
+
+

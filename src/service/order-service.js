@@ -2,7 +2,7 @@
  * @Author: Pace 
  * @Date: 2018-11-29 21:25:37 
  * @Last Modified by: Pace
- * @Last Modified time: 2018-12-14 22:39:22
+ * @Last Modified time: 2019-04-13 13:34:43
  */
 var _eb = require('util/eb.js');
 
@@ -32,6 +32,16 @@ var _order = {
             url     : _eb.getServerUrl('/myOrder/list.do'),
             //url : "http://localhost:8080/myOrder/list.do",
             data: listParam,
+            success : resolve,
+            error   : reject
+        });
+    },
+    //获取分类列表
+    getCategoryList: function( resolve, reject){
+        _eb.request({
+            url     : _eb.getServerUrl('/myOrder/category.do'),
+            //url : "http://localhost:8080/myOrder/list.do",
+            
             success : resolve,
             error   : reject
         });
